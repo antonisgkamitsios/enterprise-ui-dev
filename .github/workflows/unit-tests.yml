@@ -22,7 +22,6 @@ jobs:
       - run: npm test
   build:
     runs-on: ubuntu-latest
-    needs: [unit-test, some-other-action]
     steps:
       - uses: actions/checkout@v3
       - name: Setup Node
